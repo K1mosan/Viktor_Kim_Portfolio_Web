@@ -50,7 +50,6 @@ p {
   color: rgb(85, 85, 85);
 }
 
-/* Transition Section*/
 .btn, a {
   transition: all 100ms ease;
 }
@@ -73,15 +72,14 @@ nav {
 }
 
 .nav-links {
-  list-style: none;
-  font-size: 21px;
+  font-size: 20px;
   gap: 60px;
+  list-style: none;
 }
 
 a:hover {
-  text-decoration: underline;
   text-underline-offset: 16px;
-  text-decoration-color: #F10983;
+  color: #F10983;
 }
 
 /* Hamburger Menu Section*/
@@ -101,14 +99,6 @@ a:hover {
   transform: none;
 }
 
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
 .hamburger-menu {
   display: inline-block;
   position: relative;
@@ -118,9 +108,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 24px;
+  height: 25px;
   width: 30px;
-  cursor: pointer;
 }
 
 #hamburger-nav {
@@ -144,24 +133,24 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
+.menu-links a:hover {
+  color: #F10983;
+}
+
 .menu-links.open {
   max-height: 550px;
+  width: 430px;
 }
 
 .menu-links {
   position: absolute;
   background-color: black;
-  width: 430px;
   max-height: 0;
   overflow: hidden;
   border-radius: 20px;
   transition: all 0.3 ease-in-out;
   top: 100%;
   right: 50px;
-}
-
-.menu-links li {
-  list-style: none;
 }
 
 section {
@@ -219,12 +208,11 @@ section {
 }
 
 .title {
-  font-size: 48px;
+  font-size: 34px;
   text-align: center;
 }
 
 .image-icon {
-  cursor: pointer;
   height: 32px;
 }
 
@@ -238,7 +226,7 @@ section {
 }
 
 .btn_press {
-  border: rgb(53, 53, 53) 1px solid;
+  border: rgb(103, 103, 103) 1px solid;
 }
 
 .btn_press:hover {
@@ -271,7 +259,7 @@ section {
   background: white;
   border-radius: 20px;
   border: black 1px solid;
-  border-color: rgb(163, 163, 163);
+  border-color: rgb(103, 103, 103);
   text-align: center;
 }
 
@@ -290,7 +278,7 @@ section {
   background: white;
   border-radius: 20px;
   border: black 1px solid;
-  border-color: rgb(163, 163, 163);
+  border-color: rgb(103, 103, 103);
   text-align: center;
 }
 
@@ -312,14 +300,14 @@ section {
 /* Skills Section*/
 .skills_category-title {
   color: #f10983;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 28px;
   margin-bottom: 32px;
 }
 
 .skills_category-title_2 {
   color: #d042f8;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 28px;
   margin-bottom: 32px;
 }
@@ -344,10 +332,6 @@ section {
   width: 160px;
   justify-content: space-around;
   gap: 7px;
-}
-
-.list_skill .image-icon {
-  cursor: default;
 }
 
 /* Video Player Section */
