@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/grid.css" rel="stylesheet">
+    <title>Viktor Kim Portfolio Project Page</title>
+  </head>
+  <body>
+
+    <nav id="desktop-nav">
+        <img src="images/my_logo_black.png" alt="">
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#demoreel">Video</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <img src="images/my_logo_black.png" alt="">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#demoreel" onclick="toggleMenu()">Video</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+    <section id="profile">
+      <div class="ava-container">
+        <img src="./images/profile.png" alt="profile image"/>
+      </div>
+      <div class="block_text">
+        <h1 class="title">Viktor Kim</h1>
+        <p class="block_text_p2">Frontend Developer</p>
+        <p class="block_text_p">UX|UI Designer</p>
+        <p class="block_text_p3">Motion Designer</p>
+        <div>
+          <button class="btn btn_press" onclick="window.open('./pdf/Resume_Viktor.pdf')">Resume</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about">
+      <h1 class="hidden">Welcome to My Amazing Portfolio Website!</h1>
+      <h1 class="title">About Me</h1>
+      <div class="about-container">
+        <div class="about_info-container">
+          <div class="description-container"><br>
+            <p>
+              Welcome to my digital playground! 👋 <br><br>I'm thrilled to have you explore my portfolio. I'm not just a frontend developer; I'm also weaving the threads of UX/UI design and motion graphics into the tapestry of my creations. 💻✨ Dive into a world where HTML, CSS, SCSS, and JavaScript converge to build seamless and interactive user experiences. Every line of code, every pixel, is a brushstroke in my canvas of creativity. Here, you'll witness the marriage of technology and design, as I craft interfaces that are both functional and visually engaging. 
+            </p>
+            <p>
+              Join me on this journey of exploration and innovation, where each project is a step forward in the art of frontend development and design.
+            </p>
+          </div>
+        </div>
+      </div><br>
+      <div id="box3" class="box blue">
+        <h3>Have Fun ;)</h3>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h1 class="title">Skills</h1>
+      <div class="skills_description-container">
+        <div class="about-containers">
+          <div class="details_2-container">
+            <h2 class="skills_category-title">Frontend Development</h2>
+            <div class="list-container">
+              <div class="list_skill">
+                <img class="image-icon" src="./images/skills.png"/>
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </div>
+              <div class="list_skill">
+                <img class="image-icon" src="./images/skills.png"/>
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </div>
+              <div class="list_skill">
+                <img class="image-icon" src="./images/skills.png"/>
+                <div>
+                  <h3>SASS</h3>
+                </div>
+              </div>
+              <div class="list_skill">
+                <img class="image-icon" src="./images/skills.png"/>
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </div>
+              <div class="list_skill">
+                <img class="image-icon" src="./images/skills.png"/>
+                <div>
+                  <h3>Github</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="details_2-container">
+            <h2 class="skills_category-title_2">UX|UI Design, Motion Design</h2>
+            <div class="list-container">
+              <div class="list_skill">
+                <img class="image-icon" src="./images/skills.png"/>
+                <div>
+                  <h3>Adobe Suit</h3>
+                </div>
+              </div>
+              <div class="list_skill">
+                <img class="image-icon" src="./images/skills.png"/>
+                <div>
+                  <h3>Cinema 4d</h3>
+                </div>
+              </div>
+              <div class="list_skill">
+                <img class="image-icon" src="./images/skills.png"/>
+                <div>
+                  <h3>Figma</h3>
+                </div>
+              </div>
+              <div class="list_skill">
+                <img class="image-icon" src="./images/skills.png"/>
+                <div>
+                  <h3>Tilda</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section id="demoreel">
+        <div id="player-container">
+          <h1 class="title">Demo Reel</h1>
+          <video controls poster="images/img_main.png">
+            <source src="video/Viktor_Kim_Demo_Reel.mp4" type="video/mp4">
+            <p>Your web browser doesn't support this video.</p> 
+          </video>
+          <div class="video-controls hidden" id="video-controls">
+            <button id="play-button">
+              <i class="fa fa-play-circle-o"></i>
+            </button>
+            <button id="pause-button">
+              <i class="fa fa-pause-circle-o"></i>
+            </button>
+            <button id="stop-button">
+              <i class="fa fa-stop-circle-o"></i>
+            </button>
+            <button>
+              <i class=""></i>
+            </button>
+            <i class="fa fa-volume-up"></i><input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+            <button id="full-screen">
+              <i class="fa fa-arrows-alt"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+        <div class="about-containers">
+          <a href="./project_1.html" class="desktop-link">
+            <div class="details-container">
+              <div>
+                <img class="work_image" src="images/earbuds.jpg"/>
+              </div>
+              <h2 class="work_name">Earbuds 3d Model</h2>
+              <div>
+                <button class="btn btn_press">
+                  View more
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="./project_2.html" class="desktop-link">
+            <div class="details-container">
+              <div>
+                <img class="work_image" src="images/car.jpg"/>
+              </div>
+              <h2 class="work_name">Sport Car</h2>
+              <div>
+                <button class="btn btn_press">
+                  View more
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="./project_3.html" class="desktop-link">
+            <div class="details-container">
+              <div>
+                <img class="work_image" src="images/sport_1.jpg"/>
+              </div>
+              <h2 class="work_name">Hockey Stadium</h2>
+              <div>
+                <button class="btn btn_press">
+                  View more
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="title">Contact me</h1>
+      <form action="sendmail.php" method="post">
+        <div class="skills-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <div class="wrapper">
+                  <div class="box">
+                    <input type="text" name="firstname" id="fname" required>
+                    <label for="fname">First name</label>
+                  </div>
+                  <div class="box">
+                    <input type="text" name="lastname" id="lname" required>
+                    <label for="lname">Last name</label>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="box">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="box">
+                    <textarea id="mes" required></textarea>
+                    <label for="mes">Type your message</label>
+                  </div>
+                </div>
+                <div>
+                  <input type="submit" name="comments" value="Send" class="btn btn_press">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer class="full-width-grid-con">
+      <div class="col-start-1 col-end-4">
+        <div class="footer_bottom">
+          <p>Copyright &copy;2023 Designed by Viktor</p>
+        </div>
+      </div>
+    </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- ScrollTo plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>

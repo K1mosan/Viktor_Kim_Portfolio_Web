@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/main.css" rel="stylesheet"/>
+  <link href="css/grid.css" rel="stylesheet">
+  <title>Viktor Kim Portfolio Project Page</title>
+</head>
+<body>
+  
+  <nav id="desktop-nav">
+    <a href="index.html"><img src="images/my_logo_black.png" alt=""></a>
+  <div>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="index.html">Skills</a></li>
+      <li><a href="index.html">Video</a></li>
+      <li><a href="index.html">Projects</a></li>
+      <li><a href="index.html">Contact</a></li>
+    </ul>
+  </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <a href="index.html"><img src="images/my_logo_black.png" alt=""></a>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="index.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="index.html" onclick="toggleMenu()">Skills</a></li>
+      <li><a href="index.html" onclick="toggleMenu()">Video</a></li>
+      <li><a href="index.html" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="index.html" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </div>
+  </nav>
+
+  <div class="container">
+    <div class="wrapper_product">
+      <div class="product-box">
+        <div class="all-images">
+          <div class="small-images">
+            <img src="images/car_2.jpg" onclick="clickimg(this)">
+            <img src="images/car_3.jpg" onclick="clickimg(this)">
+            <img src="images/car_4.jpg" onclick="clickimg(this)">
+          </div>
+        <div class="main-images">
+          <img src="images/car.jpg" id="imagebox">
+        </div>
+      </div>
+      </div>
+
+      <div class="text">
+        <div class="content">
+          <h2>Sport Car</h2>
+          <p>
+            Embark on a riveting journey through the promotional video of our meticulously crafted 3D model featuring the iconic Ferrari car. This captivating visual spectacle showcases the epitome of automotive excellence, highlighting every sleek contour and aerodynamic detail. The promotional video immerses you in the Ferrari experience, capturing the essence of speed, luxury, and innovation. 
+          </p>
+          <p>
+            The intricately designed charging case seamlessly complements the earbuds, creating a harmonious visual and functional experience. With a sleek, modern form factor, these earbuds embody the perfect blend of style and substance. Elevate your audio journey with the EVO Earbuds Pro 3D model, where cutting-edge design meets the next frontier in immersive sound technology.
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <footer class="full-width-grid-con">
+    <div class="col-start-1 col-end-4">
+      <div class="footer_bottom">
+        <p>Copyright &copy;2023 Designed by Viktor</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/main.css" rel="stylesheet"/>
+  <link href="css/grid.css" rel="stylesheet">
+  <title>Viktor Kim Portfolio Project Page</title>
+</head>
+<body>
+  
+  <nav id="desktop-nav">
+    <a href="index.html"><img src="images/my_logo_black.png" alt=""></a>
+  <div>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="index.html">Skills</a></li>
+      <li><a href="index.html">Video</a></li>
+      <li><a href="index.html">Projects</a></li>
+      <li><a href="index.html">Contact</a></li>
+    </ul>
+  </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <a href="index.html"><img src="images/my_logo_black.png" alt=""></a>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="index.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="index.html" onclick="toggleMenu()">Skills</a></li>
+      <li><a href="index.html" onclick="toggleMenu()">Video</a></li>
+      <li><a href="index.html" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="index.html" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </div>
+  </nav>
+
+  <div class="container">
+    <div class="wrapper_product">
+      <div class="product-box">
+        <div class="all-images">
+          <div class="small-images">
+            <img src="images/sport_2.jpg" onclick="clickimg(this)">
+            <img src="images/sport_3.jpg" onclick="clickimg(this)">
+            <img src="images/sport_4.jpg" onclick="clickimg(this)">
+          </div>
+        <div class="main-images">
+          <img src="images/sport_1.jpg" id="imagebox">
+        </div>
+      </div>
+      </div>
+
+      <div class="text">
+        <div class="content">
+          <h2>Hockey Stadium</h2>
+          <p>
+            Step into the immersive world of our promotional video featuring a meticulously crafted 3D model of a hockey stadium. This visual extravaganza transports you into a hyper-realistic digital arena, capturing the essence of the sport in unparalleled detail. Marvel at the intricately designed stadium architecture, where every seat and detail is brought to life with precision. 
+          </p>
+          <p>
+            The dynamic video explores the virtual gameplay, showcasing the intensity of each puck drop and goal celebration. Experience the future of hockey entertainment as our 3D model seamlessly blends cutting-edge technology with the passion and excitement that define the spirit of the game, creating an unforgettable visual spectacle.
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <footer class="full-width-grid-con">
+    <div class="col-start-1 col-end-4">
+      <div class="footer_bottom">
+        <p>Copyright &copy;2023 Designed by Viktor</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
